@@ -1,0 +1,13 @@
+.topic{
+color: blue;
+}
+body{
+    background-color: black;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+    margin-right: 30vh;
+}
+.content{
+    color: white;
+}
