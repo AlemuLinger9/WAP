@@ -1,0 +1,36 @@
+body{
+    margin-top: 2%;
+    margin-left: 3%;
+
+}
+#logo{
+    height: 50;
+    width: 50;
+}
+#logout{
+    border: 1px solid red; 
+    padding: auto; 
+    margin-left: 40%;
+    align-self: center;
+}
+#welcome{
+    margin-left: 35%;
+    width: auto;
+    border: none;
+    align-self: center;
+}
+#middle{
+    flex-direction: column;
+}
+.view{
+    display: flex;
+    width: 65%;
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+.table, th, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}

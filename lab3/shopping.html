@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link href="shopping.css" type="text/css" rel="stylesheet">
+    <style>
+        td>img{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "top" class="view">
+        <img src="logo.png" alt="Logo" id="logo" height="55" width="55">
+        <span id="welcome">Welcome, Alemu</span>
+        <span id= "logout">Logout</span>
+    </div>
+    <div id="middle" class="view">
+        <p>Product Lists</p>
+        <table id="products" class="table">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>8</td>
+                <td><img src="cart.png" alt="to cart"></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td><img src="cart.png" alt="to cart"></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>13</td>
+                <td><img src="cart.png" alt="to cart"></td>
+            </tr>
+
+        </table>
+        <p>Your shipping cart</p>
+        <table id="inCart" class="table">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>total</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>9.99</td>
+                <td>
+                    <span style="font-size: large; font-weight: bold;">-</span>
+                    <span style="border: 0.5px solid black; margin-left: 2%; width: 10%; display: inline-block;">1</span>
+                    <span style="font-size: large; margin-left: 2%; font-weight: bold;">+</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>290.9</td>
+                <td>
+                    <span style="font-size: large; font-weight: bold;">-</span>
+                    <span style="border: 0.5px solid black; margin-left: 2%; width: 10%; display: inline-block;">10</span>
+                    <span style="font-size: large; margin-left: 2%; font-weight: bold;">+</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;">Total: 300.98</td>
+            </tr>
+        </table>
+        <Span style="border: 1px solid black; margin-top: 1%; background-color: gray; margin-left: 90%;">Place Order</Span>
+    </div>
+</body>
+</html>
