@@ -19,7 +19,7 @@
                     <option value="Choose Workshop">Choose Workshop</option>
                 </select>
             </div>
-            <p>Register now while seats are avilable!</p>
+            <p style="margin-left: 2%; text-decoration: underline;">Register now while seats are avilable!</p>
             <div id="row2">
                 <div id="row2col1">
                     <label for="" class="row2col1s">First Name</label> <span class="required">*</span><br><br>
@@ -40,14 +40,14 @@
                     <textarea name="address" id="address" cols="21" rows="5"></textarea><br><br>
                     <input type="text" name="city"><br><br>
                     <!-- <input type="text" name="state"><br><br> -->
-                    <select name="state" id="state">
+                    <select name="state" id="state" style="width: 178px;">
                         <option value="none">--Select---</option>
                         <option value="IA">Iowa</option>
                         <option value="CA">California</option>
                         <option value="CO">Colorado</option>
                         <option value="NJ">New Jersey</option>
                     </select><br><br>
-                    <select name="country" id="country">
+                    <select name="country" id="country" style="width: 178px;">
                         <option value="none">--Select---</option>
                         <option value="ETH">Ethiopia</option>
                         <option value="USA">USA</option>
@@ -58,16 +58,37 @@
                     <input type="text" name="phone"><br><br>
                 </div>
                 <div id="row2col3">
-                    <label for="">Lunch</label>
+                    <p style="text-decoration: underline;">Lunch</p>
+                    <label for="" style="font-weight: bold;">Meal Preference</label><br>
+                    <p style="text-decoration: underline;">Payment Details</p>
+                    <label for="" style="font-weight: bold;">Payment Mode</label><br><br><br><br><br>
+                    <label for="" style="font-weight: bold;">DD/Cheque No.</label><br><br>
+                    <label for="" style="font-weight: bold;">Drawn On (Bank Name)</label><br><br>
+                    <label for="" style="font-weight: bold;">Payable at</label><br>
                 </div>
                 <div id="row2col4">
-                    <select name="food-type" id="food-type">
+                    <select name="food-type" id="food-type" style="width: 180px;">
                         <option value="v">Vegiterian</option>
                         <option value="nv">Non Vegiterian</option>
-                    </select>
+                    </select><br>
+                    <label style="display: block; margin-top:29%;" hidden></label>
+                    <input type="checkbox" id="cash" value="cash"> <label for="cash">Cash</label><br>
+                    <input type="checkbox" id="cheque" value="cheque"> <label for="cheque">Cheque</label><br>
+                    <input type="checkbox" id="demand" value="demand"> <label for="demand">Demand Draft</label><br><br>
+                    <input type="text"> <br><br>
+                    <input type="text"><br><br>
+                    <input type="text"><br>
                 </div>
+            </div>
+            <div id="row3">
+                <button style="margin-left: 43%; background-color: aquamarine; border: aquamarine; height: 30px; margin-top: 3px; width: 10%;">Submit</button>
+                <button type="reset" style= "background-color: aquamarine; border: aquamarine; height: 30px; margin-top: 3px; width: 10%;">Reset</button>
+
             </div>
         </div>
     </form>
+
+    <a href="#"><img src="../htmlchecker.png" alt="Check HTML Validity"></a>
+    <a href="#"><img src="../css_checker.png" alt="Check CSS Validity" width="350" height="130"></a>
 </body>
 </html>
