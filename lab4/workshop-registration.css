@@ -1,0 +1,43 @@
+body{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 80%;
+    height: 85%;
+}
+#frame{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aquamarine;
+    /* background-color: aquamarine */
+    
+}
+.required{
+    color: red;
+}
+#row1{
+    margin-left: 0%;
+    background-color: aquamarine
+}
+#row2{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+#row2col1{
+    margin-left: 2%;
+}
+#row2col2{
+    margin-left: 5%;
+}
+#row2col3{
+    margin-left: 10%;
+}
+
+#row2col4
+{
+    margin-left: 10%;
+}
+.row2col1s{
+    /* margin-top: 10%; */
+}
