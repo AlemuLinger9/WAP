@@ -1,0 +1,49 @@
+1) There are six callback queues in the node.js as a part of eventloop.
+    nextTick and Promise are also a callback, but are not a part of event loop
+    -> timers: a start of an event loop. set by setTimeout() and setInterval() methods.
+    -> I/O callbacks: the second callback queue in the event loop. scheduled by file reading and writing methods.
+    -> idele, prepare : it is a callback used internally. 
+    -> poll: executes I/O related allbacks.
+            The event loop has to poll to check if I/O operations are complete, and it only queues up completed operation callbacks. 
+            This means that when the control enters the I/O queue for the first time, the queue is still empty.
+    -> Check: it will be inqueued when setImmediate() function is invoked.
+    -> close: some close callbacks will be pushed here.
+
+2) output:
+    start
+    end
+    nextTick 1
+    nextTick 2
+    Promise...1
+    Promise...2
+    timeout 1
+    timeout 2
+    nextTick 3
+    timeout 3
+3) output:
+    timeout
+    Immediate
+    readFile....
+4)  When we execute it in browser, the value of this will be windows. So, because the message is declared using
+    var keyword, it will be placed on the window. In that case, the message "Hello World" will be displyed on the console.
+    However, if we execute it using node, the value of this will be global. but, the variable message
+    will not be placed on the global. because the node keeps variables locally even declared using var keyword.
+5) The require() returns an object having a method called getName inside it. So 
+   we can not call an object as a function. So, if we execute the code we will get an error.
+   we can fix it by calling a method like:
+   //getName.getName();
+
+6) In this case require will return a method object. So we can call it directly and the output will be like:
+   Josh Edward
+
+7)  The code has no error. the require() will return and assign a method to the getFullname
+    so we can call getFullname as a function.
+    Output: Josh Edward
+8) This is IIFE representation of a function. The function is wrapped so that it can be executed immedetly.
+    Using apply(), the method is called using arguments, null for this, null for exports, and an object for module.
+    then, exports and module.exports points in the same object.
+    firstname and lastname will be added as a property on the object.
+    then, exports object will refer a getFullname function.
+    Finally, the module.exports object ({firstname: John, lastname: Smith}) will be returned.
+    So the the result will contain the returned object and will output:
+    { firstname: 'John', lastname: 'Smith' }
