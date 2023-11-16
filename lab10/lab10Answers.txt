@@ -8,7 +8,6 @@
             This means that when the control enters the I/O queue for the first time, the queue is still empty.
     -> Check: it will be inqueued when setImmediate() function is invoked.
     -> close: some close callbacks will be pushed here.
-
 2) output:
     start
     end

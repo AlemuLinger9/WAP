@@ -29,3 +29,4 @@ console.log(result);
 // then, exports object will refer a getFullname function.
 // Finally, the module.exports object ({firstname: John, lastname: Smith}) will be returned.
 //So the the result will contain the returned object and will output:
+//{ firstname: 'John', lastname: 'Smith' }
